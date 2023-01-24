@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #E5E5E5;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.main_card {
+  width: 550px;
+  height: 704px;
+  background-color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  width: 100%;
+  background-color: #F55A5A;
+}
+
+.fa-solid {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 14.46px;
+  color: #FFFFFF;
+  margin-left: 7.5px;
+}
+
+.card_container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+}
+
+.card_container:nth-child(3) {
+  border-bottom: none;
+}
+
+.card_info_container {
+  margin-left: 20px;
+}
+
+.location_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.destinations_container {
+  padding: 40px; 
+}
+
+img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+
+.card_location, .card_pin, .card_date, .card_description {
+  color: #2B283A;
+  font-size: 10.24px;
+}
+
+.card_pin {
+  width: 12px;
+  height: 12px;
+}
+
+.card_destination {
+  font-size: 25px;
+  color: #2B283A;
+}
+
+.card_title {
+  color: #2B283A;
+  font-size: 25px;
+  margin-bottom: 14px;
+}
+
+.card_date {
+  font-weight: 700;
+  margin-bottom: 7px;
+
+}
+.card_location {
+  letter-spacing: 2px;
+  margin-left: 2px;
+}
+
+.card_description {
+  line-height: 150%;
+  font-weight: 400;
+}
+.card_maps {
+  color: #918E9B;
+  font-size: 10.24px;
+  margin-left: 10px;
 }

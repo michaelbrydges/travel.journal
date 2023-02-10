@@ -1,6 +1,6 @@
 # Travel Journal
 
-This is my solution for the second of four solo projects from the Scrimba's Learn React course.  The design is based on the figma design file linked below.  You can see this project deployed [here](https://purple-hill-0e1d2931e.2.azurestaticapps.net).
+This is my solution for the second of four solo projects from Scrimba's Learn React course.  The design is based on the figma design file linked below.  You can see this project deployed [here](https://purple-hill-0e1d2931e.2.azurestaticapps.net).
 
 <br>
 

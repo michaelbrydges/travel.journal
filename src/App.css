@@ -7,110 +7,193 @@
 html {
   display: flex;
   justify-content: center;
-  align-items: center;
+  min-height: 100%;
   background-color: #E5E5E5;
-  min-height: 100vh;
 }
 
-.main_card {
-  width: 550px;
-  height: 704px;
-  background-color: #FFFFFF;
-}
+@media only screen and (min-width: 0px) {
+  .main_card {   
+    width: 100%;
+    min-height: 100%;
+    background-color: #FFFFFF;
+  }
 
-header {
-  display: flex;
-  justify-content: center;
-  height: 55px;
-  width: 100%;
-  background-color: #F55A5A;
-}
+  header {
+    display: flex;
+    justify-content: center;
+    height: 20vw;
+    width: 100%;
+    background-color: #F55A5A;
+  }
 
-.fa-solid {
-  color: #FFFFFF;
-  font-size: 24px;
-}
+  .fa-solid {
+    color: #FFFFFF;
+    font-size: 7.5vw;
+    margin-right: 4vw;
+  }
 
-.title_container {
-  display: flex;
-  align-items: center;
-}
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+  }
 
-.title {
-  font-size: 14.46px;
-  color: #FFFFFF;
-  margin-left: 7.5px;
-}
+  .title {
+    font-size: 5vw;
+    color: #FFFFFF;
+  }
 
-.card_container {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #E5E5E5;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-}
+  .card_container {
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 4vw;
+    padding-bottom: 3.5vw;
+  }
 
-.card_container:nth-child(3) {
-  border-bottom: none;
-}
+  .card_container:nth-child(3) {
+    border-bottom: none;
+  }
 
-.card_info_container {
-  margin-left: 20px;
-}
+  .card_info_container {
+    margin-top: 3.5vw; 
+  }
 
-.location_container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 3px;
-}
+  .location_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
 
-.destinations_container {
-  padding: 40px; 
-}
+  .destinations_container {
+    padding: 3.5vw; 
+  }
 
-img {
-  width: 125px;
-  height: 168px;
-  border-radius: 5px;
-}
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.75vw;
+  }
 
-.card_location, .card_pin, .card_date, .card_description {
-  color: #2B283A;
-  font-size: 10.24px;
-}
+  .card_location, .card_pin, .card_date, .card_description {
+    color: #2B283A;
+    font-size: 3.5vw;
+  }
 
-.card_pin {
-  width: 12px;
-  height: 12px;
-}
+  .card_pin {
+    width: 4vw;
+    height: 4vw;
+  }
 
-.card_destination {
-  font-size: 25px;
-  color: #2B283A;
-}
+  .card_destination {
+    font-size: 8.75vw;
+    color: #2B283A;
+  }
 
-.card_title {
-  color: #2B283A;
-  font-size: 25px;
-  margin-bottom: 14px;
-}
+  .card_title {
+    color: #2B283A;
+    font-size: 8.75vw;
+    margin-bottom: 4vw;
+  }
 
-.card_date {
-  font-weight: 700;
-  margin-bottom: 7px;
+  .card_date {
+    font-weight: 700;
+    margin-bottom: 3vw;
 
-}
-.card_location {
-  letter-spacing: 2px;
-  margin-left: 2px;
-}
+  }
+  .card_location {
+    letter-spacing: 0.5vw;
+    margin-left: 0.5vw;
+  }
 
-.card_description {
-  line-height: 150%;
-  font-weight: 400;
-}
-.card_maps {
-  color: #918E9B;
-  font-size: 10.24px;
-  margin-left: 10px;
+  .card_description {
+    line-height: 150%;
+    font-weight: 400;
+  }
+  .card_maps {
+    color: #918E9B;
+    font-size: 3.5vw;
+    margin-left: 3.5vw;
+  }
+} 
+
+
+@media only screen and (min-width: 565px) {
+
+  .main_card {
+    width: 550px;
+    height: 704px;
+  }
+
+  header {
+    height: 55px;
+  }
+
+  .fa-solid {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+
+  .title {
+    font-size: 14.46px;
+    margin-left: 7.5px;
+  }
+
+  .card_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+  }
+
+  .card_info_container {
+    margin-top: 0px; 
+    margin-left: 20px;
+  }
+
+  .location_container {
+    margin-bottom: 3px;
+  }
+
+  .destinations_container {
+    padding: 40px 40px 0px 40px; 
+  }
+
+  img {
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+  }
+
+  .card_location, .card_pin, .card_date, .card_description {
+    font-size: 10.24px;
+  }
+
+  .card_pin {
+    width: 12px;
+    height: 12px;
+  }
+
+  .card_destination {
+    font-size: 25px;
+  }
+
+  .card_title {
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
+
+  .card_date {
+    margin-bottom: 7px;
+
+  }
+  .card_location {
+    letter-spacing: 2px;
+    margin-left: 2px;
+  }
+
+  .card_maps {
+    font-size: 10.24px;
+    margin-left: 10px;
+  }
 }
